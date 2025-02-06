@@ -135,31 +135,32 @@ const ProblemStatements = () => {
             </tbody>
           </table>
           
-          <div className="flex justify-center mt-4 items-center">
-            <button
-              onClick={prevPage}
-              disabled={currentPage === 1}
-              className="text-white mx-2 text-xl  disabled:text-white"
-            >
-              &#60; 
-            </button>
-            {pageNumbers.map((number) => (
-              <button
-                key={number}
-                onClick={() => changePage(number)}
-                className={`px-4 py-2 mx-1  ${currentPage === number ? 'bg-blue-600 text-white' : 'bg-gray-200 text-white'}`}
-              >
-                {number}
-              </button>
-            ))}
-            <button
-              onClick={nextPage}
-              disabled={currentPage === pageNumbers.length}
-              className="text-black mx-2 text-xl text-white disabled:text-white"
-            >
-              &#62; 
-            </button>
-          </div>
+          <div className="flex justify-center mt-4 items-center space-x-2">
+  <button
+    onClick={prevPage}
+    disabled={currentPage === 1}
+    className="text-xl text-black disabled:text-gray-400"
+  >
+    &#60;
+  </button>
+  {pageNumbers.map((number) => (
+    <button
+      key={number}
+      onClick={() => changePage(number)}
+      className={`px-4 py-2 text-sm md:text-base ${currentPage === number ? 'bg-blue-600 text-white' : 'bg-gray-200 text-black'} rounded`}
+    >
+      {number}
+    </button>
+  ))}
+  <button
+    onClick={nextPage}
+    disabled={currentPage === pageNumbers.length}
+    className="text-xl text-black disabled:text-gray-400"
+  >
+    &#62;
+  </button>
+</div>
+
         </div>
       </div>
     </section>

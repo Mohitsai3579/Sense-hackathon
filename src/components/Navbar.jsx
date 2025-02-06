@@ -37,7 +37,7 @@ const Navbar = () => {
       
       
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md py-4 px-6">
+        <div className="md:hidden bg- text-black shadow-md py-4 px-6">
           <ul className="space-y-4">
             {['About', 'Structure & Guidelines', 'Timeline', 'Evaluation Criteria', 'Instructions', 'Takeaways'].map((item) => (
               <li key={item}>

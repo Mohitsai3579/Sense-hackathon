@@ -12,9 +12,9 @@ const Guidelines = () => {
           
           {/* Team Formation Card */}
           <div className="relative bg-white shadow-lg rounded-lg p-6">
-            <div className="absolute -top-4 left-50 bg-[#0078B7] text-white py-2 px-10 px-4 rounded-t-lg">
-              Team Formation
-            </div>
+          <div className="absolute top-[-16px] left-1/2 translate-x-[-50%] bg-[#0078B7] text-white py-2 px-6 sm:px-8 md:px-10 rounded-t-lg">
+            Team Formation
+          </div>
             <ul className="space-y-4 text-black mt-6">
               <li className="flex items-start space-x-3">
                 <FaUsers className="text-black mt-1" />
@@ -33,9 +33,9 @@ const Guidelines = () => {
 
           
           <div className="relative bg-white shadow-lg text-black text-bold rounded-lg p-6">
-            <div className="absolute -top-4 left-50 bg-[#0078B7] text-white py-2 px-10 rounded-t-lg">
-              Problem Statements
-            </div>
+          <div className="absolute top-[-16px] left-1/2 translate-x-[-50%] bg-[#0078B7] text-white py-2 px-6 sm:px-8 md:px-10 rounded-t-lg">
+            Problem Statements
+          </div>
             <ul className="space-y-4 mt-6 text-bold">
               <li className="flex items-start text-bold space-x-3">
                 <FaExclamationTriangle className="text-black mt-1" />
